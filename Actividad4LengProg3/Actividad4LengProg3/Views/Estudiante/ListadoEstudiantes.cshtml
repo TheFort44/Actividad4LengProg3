@@ -1,0 +1,84 @@
+﻿@model List<Actividad4LengProg3.Models.EstudianteViewModel>
+
+@{
+    ViewData["Title"] = "Lista de Estudiantes";
+}
+
+@if (TempData["MensajeError"] != null)
+{
+    <div class="alert alert-danger">@TempData["MensajeError"]</div>
+}
+
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+@if (TempData["MensajeExito"] != null)
+{
+    <div class="alert alert-success">@TempData["MensajeExito"]</div>
+}
+
+<h4>Lista de Estudiantes</h4>
+
+<div class="row">
+    <div class="col-12">
+        <form asp-action="ListadoEstudiantes" method="get" class="mb-3">
+            <div class="input-group">
+                <input type="text" name="filtroMatricula" class="form-control" placeholder="Buscar por matrícula" value="@Context.Request.Query["filtroMatricula"]" />
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </div>
+        </form>
+
+        <table class="table table-hover table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Matrícula</th>
+                    <th>Carrera</th>
+                    <th>Correo Institucional</th>
+                    <th>Teléfono</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Género</th>
+                    <th>Turno</th>
+                    <th>Tipo Ingreso</th>
+                    <th>¿Becado?</th>
+                    <th>Porc. Beca</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var est in Model)
+                {
+                    <tr>
+                        <td>@est.NombreCompleto</td>
+                        <td>@est.Matricula</td>
+                        <td>@est.Carrera</td>
+                        <td>@est.CorreoInstitucional</td>
+                        <td>@est.Telefono</td>
+                        <td>@est.FechaNacimiento.ToShortDateString()</td>
+                        <td>@est.Genero</td>
+                        <td>@est.Turno</td>
+                        <td>@est.TipoIngreso</td>
+                        <td>@(est.EstaBecado ? "Sí" : "No")</td>
+                        <td>@(est.PorcentajeBeca.HasValue? est.PorcentajeBeca + "%" : "-")</td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <a href="@Url.Action("Eliminar", "Estudiante", new { matricula = est.Matricula })"
+                                   class="btn btn-danger"
+                                   onclick="return confirm('¿Estás seguro de que deseas eliminar este estudiante?');">
+                                    Eliminar
+                                </a>
+
+                                <a href="@Url.Action("Editar", "Estudiante", new { matricula = est.Matricula })"
+                                   class="btn btn-secondary">
+                                    Editar
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

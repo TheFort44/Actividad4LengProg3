@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Registrar Estudiante";
+}
+
+@model Actividad4LengProg3.Models.EstudianteViewModel
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<h2>Registrar Estudiantes</h2>
+
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<form asp-action="Registrar" method="post">
+    <div>
+        <label asp-for="NombreCompleto"></label>
+        <input asp-for="NombreCompleto" class="w-100 px-3 py-2 border rounded" />
+        <span asp-validation-for="NombreCompleto" class="text-danger" />
+    </div>
+
+    <div>
+        <label asp-for="Matricula"></label>
+        <input asp-for="Matricula" class="w-100 px-3 py-2 border rounded" />
+        <span asp-validation-for="Matricula" class="text-danger" />
+    </div>
+
+    <div>
+        <label asp-for="Carrera"></label>
+        <select asp-for="Carrera" class="w-100 px-3 py-2 border rounded" asp-items="ViewBag.Carreras">
+            <option value="">Seleccione una carrera</option>
+        </select>
+        <span asp-validation-for="Carrera" class="text-danger" />
+    </div>
+
+    <div>
+        <label asp-for="CorreoInstitucional"></label>
+        <input asp-for="CorreoInstitucional" class="w-100 px-3 py-2 border rounded" />
+        <span asp-validation-for="CorreoInstitucional" class="text-danger" />
+    </div>
+
+    <div>
+        <label asp-for="Telefono"></label>
+        <input asp-for="Telefono" class="w-100 px-3 py-2 border rounded" />
+        <span asp-validation-for="Telefono" class="text-danger" />
+    </div>
+
+    <div>
+        <label asp-for="FechaNacimiento"></label>
+        <input asp-for="FechaNacimiento" type="date" class="w-100 px-3 py-2 border rounded" />
+        <span asp-validation-for="FechaNacimiento" class="text-danger" />
+    </div>
+
+    <div>
+        <label>Género</label><br />
+        <input type="radio" asp-for="Genero" value="Masculino" /> Masculino
+        <input type="radio" asp-for="Genero" value="Femenino" /> Femenino
+        <span asp-validation-for="Genero" class="text-danger" />
+    </div>
+
+    <div>
+        <label asp-for="Turno"></label>
+        <select asp-for="Turno" class="w-100 px-3 py-2 border rounded">
+            <option value="">Seleccione un turno</option>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+        </select>
+        <span asp-validation-for="Turno" class="text-danger" />
+    </div>
+
+    <div>
+        <label asp-for="TipoIngreso"></label>
+        <select asp-for="TipoIngreso" class="w-100 px-3 py-2 border rounded" asp-items="ViewBag.TiposIngreso">
+            <option value="">Seleccione un tipo</option>
+        </select>
+        <span asp-validation-for="TipoIngreso" class="text-danger" />
+    </div>
+
+    <div>
+        <label asp-for="EstaBecado"></label>
+        <input asp-for="EstaBecado" type="checkbox" />
+    </div>
+
+    <div>
+        <label asp-for="PorcentajeBeca"></label>
+        <input asp-for="PorcentajeBeca" class="w-100 px-3 py-2 border rounded" />
+        <span asp-validation-for="PorcentajeBeca" class="text-danger" />
+    </div>
+
+    <div>
+        <label>
+            <input asp-for="TerminosYCondiciones" type="checkbox" />
+            Acepto los términos y condiciones
+        </label>
+        <span asp-validation-for="TerminosYCondiciones" class="text-danger" />
+    </div>
+
+    <br />
+    <button class="btn btn-success" type="submit">Crear</button>
+</form>
