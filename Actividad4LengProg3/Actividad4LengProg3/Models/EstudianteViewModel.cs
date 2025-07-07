@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace Actividad4LengProg3.Models
 {
@@ -52,3 +53,5 @@ namespace Actividad4LengProg3.Models
         public bool TerminosYCondiciones { get; set; }
     }
 }
+
+Scaffold-DbContext "Server=LOCALHOST;Database=Actividad4LengProg3;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer - OutputDir Models - Force

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|c:\\users\\jerki\\onedrive\\documents\\github\\actividad4lengprog3\\actividad4lengprog3\\actividad4lengprog3\\models\\estudianteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|solutionrelative:actividad4lengprog3\\models\\estudianteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|c:\\users\\jerki\\onedrive\\documents\\github\\actividad4lengprog3\\actividad4lengprog3\\actividad4lengprog3\\views\\estudiante\\listadoestudiantes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|solutionrelative:actividad4lengprog3\\views\\estudiante\\listadoestudiantes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|c:\\users\\jerki\\onedrive\\documents\\github\\actividad4lengprog3\\actividad4lengprog3\\actividad4lengprog3\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|solutionrelative:actividad4lengprog3\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|c:\\users\\jerki\\onedrive\\documents\\github\\actividad4lengprog3\\actividad4lengprog3\\actividad4lengprog3\\models\\estudianteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|solutionrelative:actividad4lengprog3\\models\\estudianteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|c:\\users\\jerki\\onedrive\\documents\\github\\actividad4lengprog3\\actividad4lengprog3\\actividad4lengprog3\\views\\estudiante\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Editar.cshtml",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Views\\Estudiante\\Editar.cshtml",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Views\\Estudiante\\Editar.cshtml",
@@ -42,21 +42,19 @@
               "RelativeToolTip": "Actividad4LengProg3\\Views\\Estudiante\\Editar.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-01T02:44:03.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T02:44:03.233Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ListadoEstudiantes.cshtml",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Views\\Estudiante\\ListadoEstudiantes.cshtml",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Views\\Estudiante\\ListadoEstudiantes.cshtml",
               "ToolTip": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Views\\Estudiante\\ListadoEstudiantes.cshtml",
               "RelativeToolTip": "Actividad4LengProg3\\Views\\Estudiante\\ListadoEstudiantes.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwDcAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwDcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-01T02:41:46.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T02:41:46.29Z"
             },
             {
               "$type": "Document",
@@ -68,25 +66,24 @@
               "RelativeToolTip": "Actividad4LengProg3\\Views\\Estudiante\\Index.cshtml",
               "ViewState": "AgIAADYAAAAAAAAAAIBJwB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-01T02:38:29.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T02:38:29.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "EstudianteViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Models\\EstudianteViewModel.cs",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Models\\EstudianteViewModel.cs",
               "ToolTip": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Models\\EstudianteViewModel.cs",
               "RelativeToolTip": "Actividad4LengProg3\\Models\\EstudianteViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAuwDgAAAC5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T02:36:41.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EstudianteController.cs",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Controllers\\EstudianteController.cs",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Controllers\\EstudianteController.cs",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "Actividad4LengProg3\\Controllers\\EstudianteController.cs",
               "ViewState": "AgIAAGsAAAAAAAAAAAAIwH4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T02:34:04.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T02:34:04.781Z"
             }
           ]
         }
