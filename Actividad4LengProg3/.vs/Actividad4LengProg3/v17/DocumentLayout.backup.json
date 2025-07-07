@@ -55,8 +55,7 @@
               "RelativeToolTip": "Actividad4LengProg3\\Views\\Estudiante\\ListadoEstudiantes.cshtml",
               "ViewState": "AgIAABcAAAAAAAAAAAAgwDcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-01T02:41:46.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T02:41:46.29Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "Actividad4LengProg3\\Views\\Estudiante\\Index.cshtml",
               "ViewState": "AgIAADkAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-01T02:38:29.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T02:38:29.851Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "Actividad4LengProg3\\Models\\EstudianteViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T02:36:41.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T02:36:41.004Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "Actividad4LengProg3\\Controllers\\EstudianteController.cs",
               "ViewState": "AgIAAGsAAAAAAAAAAAAIwH4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T02:34:04.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T02:34:04.781Z"
             }
           ]
         }
