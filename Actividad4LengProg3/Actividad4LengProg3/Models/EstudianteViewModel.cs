@@ -54,4 +54,3 @@ namespace Actividad4LengProg3.Models
     }
 }
 
-//Scaffold-DbContext "Server=DESKTOP-GBKGIUE\SQLEXPRESS;Database=Actividad4LengProg3;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force

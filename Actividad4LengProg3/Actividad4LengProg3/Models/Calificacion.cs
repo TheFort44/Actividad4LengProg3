@@ -15,5 +15,5 @@ public partial class Calificacion
 
     public virtual Materium CodigoMateriaNavigation { get; set; } = null!;
 
-    public virtual ListadoEstudiante MatriculaEstudianteNavigation { get; set; } = null!;
+   // public virtual ListadoEstudiante MatriculaEstudianteNavigation { get; set; } = null!;
 }
