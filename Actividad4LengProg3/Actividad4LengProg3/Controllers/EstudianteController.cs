@@ -1,8 +1,5 @@
 ﻿using Actividad4LengProg3.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Globalization;
 using System.Reflection;
 
 namespace Actividad4LengProg3.Controllers
@@ -69,7 +66,7 @@ namespace Actividad4LengProg3.Controllers
                     return RedirectToAction("ListadoEstudiantes");
                 }
 
-                EstudianteActual.NombreCompleto = estudiante.NombreCompleto;
+                EstudianteActual.Nombre = estudiante.Nombre;
                 EstudianteActual.Matricula = estudiante.Matricula;
                 EstudianteActual.Carrera = estudiante.Carrera;
                 EstudianteActual.CorreoInstitucional = estudiante.CorreoInstitucional;
@@ -78,7 +75,7 @@ namespace Actividad4LengProg3.Controllers
                 EstudianteActual.Genero = estudiante.Genero;
                 EstudianteActual.Turno = estudiante.Turno;
                 EstudianteActual.TipoIngreso = estudiante.TipoIngreso;
-                EstudianteActual.EstaBecado = estudiante.EstaBecado;
+                EstudianteActual.Becado = estudiante.Becado;
                 EstudianteActual.PorcentajeBeca = estudiante.PorcentajeBeca;
 
                 _context.Update(EstudianteActual);
@@ -105,4 +102,4 @@ namespace Actividad4LengProg3.Controllers
         }
     }
 }
-       
+   

@@ -1,0 +1,49 @@
+﻿@model CalificacionViewModel;
+
+@if (TempData["Mensaje"] != null)
+{
+	<div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+
+<form asp-action="Calificar" asp-controller="Calificaciones" method="post">
+	<div>
+		<label asp-for="MatriculaEstudiante"></label>
+		<select asp-for="MatriculaEstudiante" class="form-control" asp-items="ViewBag.Estudiantes">
+			<option value="">Estudiante</option>
+		</select>
+		<span asp-validation-for="MatriculaEstudiante" class="text-danger"></span>
+	</div>
+	<div>
+		<label asp-for="CodigoMateria"></label>
+		<select asp-for="CodigoMateria" class="form-control" asp-items="ViewBag.Materias">
+			<option value="">Materia</option>
+		</select>
+		<span asp-validation-for="CodigoMateria" class="text-danger"></span>
+	</div>
+	<div>
+		<label asp-for="Nota"></label>
+		<input asp-for="Nota" class="form-control" />
+		<span asp-validation-for="Nota" class="text-danger"></span>
+	</div>
+	<div>
+		<label asp-for="Periodo"></label>
+		<select asp-for="Periodo" class="form-control" asp-items="@(new SelectList(new[] {"1-2025", "2-2025", "3-2025"}))">
+		<option value="">Periodo</option>		  		
+		</select>
+		<span asp-validation-for="Periodo" class="text-danger"></span>
+  	</div>
+																				
+
+
+	<div>
+		<button class="btn btn-primary" type="submit">Colocar calificacion</button>
+		<a href="/Calificaciones/ListadoCalificaciones" class="btn btn-secondary">Dashboard Calificaciones</a>
+	</div>
+
+</form>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}
+

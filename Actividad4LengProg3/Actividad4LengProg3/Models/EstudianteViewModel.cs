@@ -1,14 +1,19 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Actividad4LengProg3.Models
 {
+    [Table("ListadoEstudiantes")]
     public class EstudianteViewModel
     {
+        [Key]
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "Este campo no puede estar vacío")]
         [StringLength(100, ErrorMessage = "El nombre no puede tener más de 100 caracteres")]
         [Display(Name = "Nombre completo")]
-        public string NombreCompleto { get; set; }
+        public string Nombre { get; set; }
 
         [Required(ErrorMessage = "Este campo no puede estar vacío")]
         [StringLength(15, MinimumLength = 6, ErrorMessage = "La matrícula debe tener entre 6 y 15 caracteres")]
@@ -43,14 +48,14 @@ namespace Actividad4LengProg3.Models
         public string TipoIngreso { get; set; }
 
         [Display(Name = "¿Está becado?")]
-        public bool EstaBecado { get; set; }
+        public bool Becado { get; set; }
 
         [Range(0, 100, ErrorMessage = "El porcentaje debe estar entre 0 y 100")]
         [Display(Name = "Porcentaje de beca")]
-        public int? PorcentajeBeca { get; set; }
+        public decimal? PorcentajeBeca { get; set; }
 
+        [NotMapped]
         [Display(Name = "Términos y condiciones")]
         public bool TerminosYCondiciones { get; set; }
     }
 }
-
