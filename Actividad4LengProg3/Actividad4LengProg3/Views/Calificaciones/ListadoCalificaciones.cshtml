@@ -1,0 +1,43 @@
+﻿@model List<Actividad4LengProg3.Models.CalificacionViewModel>
+
+<h1>Listado de estudiantes calificados</h1>
+
+@if (TempData["Mensaje"] != null)
+{
+	<div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<div class="row">
+	<div class="col-12">
+		<table class=" table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Matricula</th>
+					<th>Código de asignatura</th>
+					<th>Calificacion</th>
+					<th>Periodo</th>
+				</tr>
+			</thead>
+			<tbody>
+				@{
+					foreach (var it in Model)
+					{
+						<tr>
+							<td>@it.Id</td>
+							<td>@it.MatriculaEstudiante</td>
+							<td>@it.CodigoMateria</td>
+							<td>@it.Nota</td>
+							<td>@it.Periodo</td>
+							<td>
+								<a asp-action="Editar" asp-route-idcalificacion="@it.Id" class="btn btn-secondary">Editar calificacion</a>
+								<a asp-action="Eliminar" asp-route-idcalificacion="@it.Id" class="btn btn-danger">Eliminar calificacion</a>
+							</td>
+						</tr>
+					}
+
+				}
+			</tbody>
+		</table>
+	</div>
+</div>

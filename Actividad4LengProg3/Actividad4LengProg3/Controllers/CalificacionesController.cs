@@ -42,12 +42,12 @@ namespace Actividad4LengProg3.Controllers
                 _context.Calificacion.Add(calificacion);
                 _context.SaveChanges();
                 TempData["Mensaje"] = "Calificacion Publicada";
-                return RedirectToAction("ListadoEstudiantes");
+                return RedirectToAction("ListadoCalificaciones");
             }
             return View("Index", calificacion);
         }
 
-        public IActionResult Lista()
+        public IActionResult ListadoCalificaciones()
         {
             var calificacion = _context.Calificacion.ToList();
             return View(calificacion);
@@ -60,7 +60,7 @@ namespace Actividad4LengProg3.Controllers
             if (calificacion == null)
             {
                 TempData["Mensaje"] = "Esta calificacion no existe";
-                return RedirectToAction("ListadoEstudiantes");
+                return RedirectToAction("ListadoCalificaciones");
             }
             return View(calificacion);
         }
@@ -76,7 +76,7 @@ namespace Actividad4LengProg3.Controllers
             if (calificacionActual == null)
             {
                 TempData["Mensaje"] = "Esta calificacion no existe";
-                return RedirectToAction("ListadoEstudiantes");
+                return RedirectToAction("ListadoCalificaciones");
             }
 
             calificacionActual.Nota = calificacion.Nota;
@@ -85,7 +85,7 @@ namespace Actividad4LengProg3.Controllers
             _context.SaveChanges();
 
             TempData["Mensaje"] = "Calificacion Corregida";
-            return RedirectToAction("ListadoEstudiantes");
+            return RedirectToAction("ListadoCalificaciones");
         }
 
         public IActionResult Eliminar(int num)
@@ -96,7 +96,7 @@ namespace Actividad4LengProg3.Controllers
                 _context.Calificacion.Remove(calificacion);
                 _context.SaveChanges();
                 TempData["Mensaje"] = "Calificacion eliminada";
-                return RedirectToAction("ListadoEstudiantes");
+                return RedirectToAction("ListadoCalificaciones");
             }
             return View(calificacion);
         }

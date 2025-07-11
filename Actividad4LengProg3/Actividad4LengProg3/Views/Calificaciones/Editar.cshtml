@@ -7,23 +7,23 @@
 
 
 <form asp-action="Editar" asp-controller="Calificaciones" method="post">
-	<input type="hidden" asp-for="idCalificacion" />
+	<input type="hidden" asp-for="Id" />
 	<div>
-		<label asp-for="matriculaEstudiante"></label>
-		<input asp-for="matriculaEstudiante" class="form-control" readonly />
+		<label asp-for="MatriculaEstudiante"></label>
+		<input asp-for="MatriculaEstudiante"  class="form-control" readonly />
 	</div>
 	<div>
-		<label asp-for="codMateria"></label>
-		<input asp-for="codMateria" class="form-control" readonly />
+		<label asp-for="CodigoMateria"></label>
+		<input asp-for="CodigoMateria" class="form-control" readonly />
 	</div>
 	<div>
-		<label asp-for="notaEstudiante"></label>
-		<input asp-for="notaEstudiante" class="form-control" />
-		<span asp-validation-for="notaEstudiante" class="text-danger"></span>
+		<label asp-for="Nota"></label>
+		<input asp-for="Nota" class="form-control" />
+		<span asp-validation-for="Nota" class="text-danger"></span>
 	</div>
 	<div>
-		<label asp-for="periodoEstudiante"></label>
-		<input asp-for="periodoEstudiante" class="form-control" readonly />
+		<label asp-for="Periodo"></label>
+		<input asp-for="Periodo" class="form-control" readonly />
 	</div>
 
 	<br />

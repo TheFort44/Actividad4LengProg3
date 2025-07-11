@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|c:\\users\\jerki\\onedrive\\documents\\github\\actividad4lengprog3\\actividad4lengprog3\\actividad4lengprog3\\views\\calificaciones\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|solutionrelative:actividad4lengprog3\\views\\calificaciones\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|c:\\users\\jerki\\onedrive\\documents\\github\\actividad4lengprog3\\actividad4lengprog3\\actividad4lengprog3\\views\\calificaciones\\listadocalificaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|solutionrelative:actividad4lengprog3\\views\\calificaciones\\listadocalificaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|c:\\users\\jerki\\onedrive\\documents\\github\\actividad4lengprog3\\actividad4lengprog3\\actividad4lengprog3\\controllers\\calificacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|solutionrelative:actividad4lengprog3\\controllers\\calificacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|c:\\users\\jerki\\onedrive\\documents\\github\\actividad4lengprog3\\actividad4lengprog3\\actividad4lengprog3\\views\\calificaciones\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|solutionrelative:actividad4lengprog3\\views\\calificaciones\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CCC3056-C3FE-4273-ADB2-118E94CC5D40}|Actividad4LengProg3\\Actividad4LengProg3.csproj|c:\\users\\jerki\\onedrive\\documents\\github\\actividad4lengprog3\\actividad4lengprog3\\actividad4lengprog3\\views\\calificaciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -55,19 +59,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ListadoCalificaciones.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Views\\Calificaciones\\ListadoCalificaciones.cshtml",
+              "RelativeDocumentMoniker": "Actividad4LengProg3\\Views\\Calificaciones\\ListadoCalificaciones.cshtml",
+              "ToolTip": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Views\\Calificaciones\\ListadoCalificaciones.cshtml",
+              "RelativeToolTip": "Actividad4LengProg3\\Views\\Calificaciones\\ListadoCalificaciones.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T00:41:52.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Editar.cshtml",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Views\\Calificaciones\\Editar.cshtml",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Views\\Calificaciones\\Editar.cshtml",
               "ToolTip": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Views\\Calificaciones\\Editar.cshtml",
               "RelativeToolTip": "Actividad4LengProg3\\Views\\Calificaciones\\Editar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-10T03:56:50.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "EstudianteController.cs",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Controllers\\EstudianteController.cs",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Controllers\\EstudianteController.cs",
@@ -75,12 +92,11 @@
               "RelativeToolTip": "Actividad4LengProg3\\Controllers\\EstudianteController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T03:48:47.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T03:48:47.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Views\\Calificaciones\\Index.cshtml",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Views\\Calificaciones\\Index.cshtml",
@@ -88,12 +104,11 @@
               "RelativeToolTip": "Actividad4LengProg3\\Views\\Calificaciones\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-10T03:37:11.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T03:37:11.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CalificacionViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Models\\CalificacionViewModel.cs",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Models\\CalificacionViewModel.cs",
@@ -101,8 +116,7 @@
               "RelativeToolTip": "Actividad4LengProg3\\Models\\CalificacionViewModel.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T03:34:47.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T03:34:47.249Z"
             },
             {
               "$type": "Document",
@@ -112,14 +126,14 @@
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Controllers\\CalificacionesController.cs",
               "ToolTip": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Controllers\\CalificacionesController.cs",
               "RelativeToolTip": "Actividad4LengProg3\\Controllers\\CalificacionesController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwDgAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAcwDEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T03:33:25.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Calificacion.cs",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Models\\Calificacion.cs",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Models\\Calificacion.cs",
@@ -127,12 +141,11 @@
               "RelativeToolTip": "Actividad4LengProg3\\Models\\Calificacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T03:33:05.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T03:33:05.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Actividad4LengProg3Context.cs",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Models\\Actividad4LengProg3Context.cs",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Models\\Actividad4LengProg3Context.cs",
@@ -140,12 +153,11 @@
               "RelativeToolTip": "Actividad4LengProg3\\Models\\Actividad4LengProg3Context.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T03:32:28.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T03:32:28.275Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Materium.cs",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Models\\Materium.cs",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Models\\Materium.cs",
@@ -153,12 +165,11 @@
               "RelativeToolTip": "Actividad4LengProg3\\Models\\Materium.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T02:43:14.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T02:43:14.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MateriasController.cs",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Controllers\\MateriasController.cs",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Controllers\\MateriasController.cs",
@@ -166,12 +177,11 @@
               "RelativeToolTip": "Actividad4LengProg3\\Controllers\\MateriasController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAYwBoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T03:17:34.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T03:17:34.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MateriaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jerki\\OneDrive\\Documents\\GitHub\\Actividad4LengProg3\\Actividad4LengProg3\\Actividad4LengProg3\\Models\\MateriaViewModel.cs",
               "RelativeDocumentMoniker": "Actividad4LengProg3\\Models\\MateriaViewModel.cs",
@@ -179,8 +189,7 @@
               "RelativeToolTip": "Actividad4LengProg3\\Models\\MateriaViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T03:02:20.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T03:02:20.827Z"
             }
           ]
         }
