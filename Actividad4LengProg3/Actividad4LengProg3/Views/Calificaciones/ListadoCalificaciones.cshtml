@@ -1,6 +1,8 @@
 ﻿@model List<Actividad4LengProg3.Models.CalificacionViewModel>
 
-<h1>Listado de estudiantes calificados</h1>
+<h1 class="text-center my-4" style="font-size: 2.5rem; font-weight: 600; color: #2c3e50;">
+	Listado de calificaciones
+</h1>
 
 @if (TempData["Mensaje"] != null)
 {
@@ -21,17 +23,17 @@
 			</thead>
 			<tbody>
 				@{
-					foreach (var it in Model)
+					foreach (var data in Model)
 					{
 						<tr>
-							<td>@it.Id</td>
-							<td>@it.MatriculaEstudiante</td>
-							<td>@it.CodigoMateria</td>
-							<td>@it.Nota</td>
-							<td>@it.Periodo</td>
+							<td>@data.Id</td>
+							<td>@data.MatriculaEstudiante</td>
+							<td>@data.CodigoMateria</td>
+							<td>@data.Nota</td>
+							<td>@data.Periodo</td>
 							<td>
-								<a asp-action="Editar" asp-route-idcalificacion="@it.Id" class="btn btn-secondary">Editar calificacion</a>
-								<a asp-action="Eliminar" asp-route-idcalificacion="@it.Id" class="btn btn-danger">Eliminar calificacion</a>
+								<a asp-action="Editar" asp-route-idcalificacion="@data.Id" class="btn btn-secondary">Editar calificacion</a>
+								<a asp-action="Eliminar" asp-route-num="@data.Id" class="btn btn-danger">Eliminar calificacion</a>
 							</td>
 						</tr>
 					}
@@ -39,5 +41,6 @@
 				}
 			</tbody>
 		</table>
+		<a class="btn btn-primary" asp-action="Index" asp-controller="Calificaciones">Agregar calificacion</a>
 	</div>
 </div>

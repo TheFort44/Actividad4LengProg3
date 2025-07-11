@@ -6,6 +6,10 @@
 }
 
 
+<h1 class="text-center my-4" style="font-size: 2.5rem; font-weight: 600; color: #2c3e50;">
+	Agregar calificaciones
+</h1>
+
 <form asp-action="Calificar" asp-controller="Calificaciones" method="post">
 	<div>
 		<label asp-for="MatriculaEstudiante"></label>
@@ -34,11 +38,11 @@
 		<span asp-validation-for="Periodo" class="text-danger"></span>
   	</div>
 																				
-
+	  <br />
 
 	<div>
-		<button class="btn btn-primary" type="submit">Colocar calificacion</button>
-		<a href="/Calificaciones/ListadoCalificaciones" class="btn btn-secondary">Dashboard Calificaciones</a>
+		<button class="btn btn-primary" type="submit">Guardar calificacion</button>
+		<a href="/Calificaciones/ListadoCalificaciones" class="btn btn-secondary">Cancelar</a>
 	</div>
 
 </form>

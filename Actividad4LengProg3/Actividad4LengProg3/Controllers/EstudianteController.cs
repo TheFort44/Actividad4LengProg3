@@ -1,5 +1,6 @@
 ﻿using Actividad4LengProg3.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Reflection;
 
 namespace Actividad4LengProg3.Controllers
@@ -31,7 +32,6 @@ namespace Actividad4LengProg3.Controllers
                 TempData["Mensaje"] = "El estudiante fue registrado";
                 return RedirectToAction("ListadoEstudiantes");
             }
-            ;
             return View("Index", estudiantes);
         }
 
@@ -90,15 +90,21 @@ namespace Actividad4LengProg3.Controllers
 
         public IActionResult Eliminar(string matricula)
         {
-            var estudiante = _context.Estudiante.FirstOrDefault(e => e.Matricula == matricula);
-            if (estudiante != null)
+            var estudiante = _context.Estudiante.FirstOrDefault(e => e.Matricula == matricula);           
+
+            if (estudiante == null) 
             {
+                TempData["Mensaje"] = "Primero debe eliminar la calificación";
+                return RedirectToAction("ListadoEstudiantes");
+            }
+            else         
+            { 
                 _context.Estudiante.Remove(estudiante);
+
                 _context.SaveChanges();
                 TempData["Mensaje"] = "El estudiante fue eliminado";
                 return RedirectToAction("ListadoEstudiantes");
             }
-            return View(estudiante);
         }
     }
 }

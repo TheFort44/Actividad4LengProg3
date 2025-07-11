@@ -25,12 +25,12 @@ namespace Actividad4LengProg3.Controllers
                 _context.Materia.Add(materias);
                 _context.SaveChanges();
                 TempData["Mensaje"] = "Se registro la materia";
-                return RedirectToAction("ListadoEstudiantes");
+                return RedirectToAction("ListadoMaterias");
             }
             return View("Index", materias);
         }
 
-        public IActionResult Lista()
+        public IActionResult ListadoMaterias ()
         {
             var materias = _context.Materia.ToList();
             return View(materias);
@@ -42,7 +42,7 @@ namespace Actividad4LengProg3.Controllers
             if (materias == null)
             {
                 TempData["Mensaje"] = "Esta materia no existe";
-                return RedirectToAction("Lista");
+                return RedirectToAction("ListadoMaterias");
 
             }
 
@@ -58,7 +58,7 @@ namespace Actividad4LengProg3.Controllers
                 if (materiaActual == null)
                 {
                     TempData["Mensaje"] = "Esta asignatura no fue encontrada";
-                    return RedirectToAction("Lista");
+                    return RedirectToAction("ListadoMaterias");
                 }
 
                 materiaActual.Nombre = materia.Nombre;
@@ -69,7 +69,7 @@ namespace Actividad4LengProg3.Controllers
                 _context.SaveChanges();
 
                 TempData["Mensaje"] = "Edicion Correcta";
-                return RedirectToAction("ListadoEstudiantes");
+                return RedirectToAction("ListadoMaterias");
 
             }
             return View(materia);
@@ -83,7 +83,7 @@ namespace Actividad4LengProg3.Controllers
                 _context.Materia.Remove(materias);
                 _context.SaveChanges();
                 TempData["Mensaje"] = "Esta asignatura fue eliminada";
-                return RedirectToAction("ListadoEstudiantes");
+                return RedirectToAction("ListadoMaterias");
             }
             return View(materias);
         }

@@ -4,7 +4,9 @@
     ViewData["Title"] = "Editar Estudiante";
 }
 
-<h2>Editar Estudiante</h2>
+<h1 class="text-center my-4" style="font-size: 2.5rem; font-weight: 600; color: #2c3e50;">
+    Editar estudiante
+</h1>
 
 @if (TempData["MensajeError"] != null)
 {
@@ -27,7 +29,7 @@
 
     <div>
         <label asp-for="Carrera"></label>
-        <select asp-for="Carrera" class="w-100 px-3 py-2 border rounded" asp-items="ViewBag.Carreras">
+        <select asp-for="Carrera" class="w-100 px-3 py-2 border rounded" asp-items="@(new SelectList(new[] { "Ingenieria Industrial", "Derecho", "Psicologia", "Administracion de Empresas", "Contabilidad" }))">
             <option value="">Seleccione una carrera</option>
         </select>
         <span asp-validation-for="Carrera" class="text-danger" />
@@ -53,8 +55,8 @@
 
     <div>
         <label>Género</label><br />
-        <input type="radio" asp-for="Genero" value="Masculino" /> Masculino
-        <input type="radio" asp-for="Genero" value="Femenino" /> Femenino
+        <input type="radio" asp-for="Genero" value="M" /> Masculino
+        <input type="radio" asp-for="Genero" value="F" /> Femenino
         <span asp-validation-for="Genero" class="text-danger" />
     </div>
 
@@ -62,16 +64,16 @@
         <label asp-for="Turno"></label>
         <select asp-for="Turno" class="w-100 px-3 py-2 border rounded">
             <option value="">Seleccione un turno</option>
-            <option>Mañana</option>
-            <option>Tarde</option>
-            <option>Noche</option>
+            <option>Matutino</option>
+            <option>Vespertino</option>
+            <option>Nocturno</option>
         </select>
         <span asp-validation-for="Turno" class="text-danger" />
     </div>
 
     <div>
         <label asp-for="TipoIngreso"></label>
-        <select asp-for="TipoIngreso" class="w-100 px-3 py-2 border rounded" asp-items="ViewBag.TiposIngreso">
+        <select asp-for="TipoIngreso" class="w-100 px-3 py-2 border rounded" asp-items="@(new SelectList(new[] { "Nuevo", "Reingreso", "Transferencia" }))">
             <option value="">Seleccione un tipo</option>
         </select>
         <span asp-validation-for="TipoIngreso" class="text-danger" />

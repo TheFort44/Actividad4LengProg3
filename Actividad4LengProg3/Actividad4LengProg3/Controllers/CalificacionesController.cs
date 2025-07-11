@@ -98,7 +98,7 @@ namespace Actividad4LengProg3.Controllers
                 TempData["Mensaje"] = "Calificacion eliminada";
                 return RedirectToAction("ListadoCalificaciones");
             }
-            return View(calificacion);
+            return View("ListadoCalificaciones", calificacion);
         }
     }
 }

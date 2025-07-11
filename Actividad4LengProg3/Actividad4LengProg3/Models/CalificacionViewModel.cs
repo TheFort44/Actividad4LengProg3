@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Actividad4LengProg3.Models
 {
-    [Table("CalificacionViewModel")]
+    [Table("Calificacion")]
     public class CalificacionViewModel
     {
         [Key]
@@ -29,7 +29,7 @@ namespace Actividad4LengProg3.Models
         [Required(ErrorMessage = "El periodo es obligatorio.")]
         [Column("Periodo")]
         [Display(Name = "Periodo académico")]
-        public string Periodo { get; set; }
+        public string? Periodo { get; set; }
 
     }
 }

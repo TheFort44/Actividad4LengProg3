@@ -6,13 +6,17 @@
     <div class="alert alert-success">@TempData["Mensaje"]</div>
 }
 
+<h1 class="text-center my-4" style="font-size: 2.5rem; font-weight: 600; color: #2c3e50;">
+    Listado de estudiantes
+</h1>
+
 <div class="row">
     <div class="col-12">
-        <table>
+        <table class=" table table-bordered table-hover">
             <thead>
                 <tr>
                     <th>
-                        Nombrre
+                        Nombre
                     </th>
                     <th>
                         Matricula
@@ -90,7 +94,8 @@
                          <a asp-action="Editar" asp-route-matricula="@datos.Matricula" class="btn btn-secondary">
                          Editar
                          </a>
-
+                         </td>
+                         <td>
                          <a asp-action="Eliminar" asp-route-matricula="@datos.Matricula" class="btn btn-danger">
                          Eliminar
                          </a>
@@ -101,5 +106,7 @@
                 }
             </tbody>
          </table>
+         
+        <a class="btn btn-primary" asp-action="Index" asp-controller="Estudiante">Registrar nuevo estudiante</a>
     </div>
 </div>

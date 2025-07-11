@@ -1,0 +1,47 @@
+﻿@model MateriaViewModel;
+
+@if (TempData["Mensaje"] != null)
+{
+	<div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<h1 class="text-center my-4" style="font-size: 2.5rem; font-weight: 600; color: #2c3e50;">
+	Agregar materia
+</h1>
+
+<form asp-action="Registrar" asp-controller="Materias" method="post">
+	<div>
+		<label asp-for="Codigo"></label>
+		<input asp-for="Codigo" class="form-control" />
+		<span asp-validation-for="Codigo" class="text-danger"></span>
+	</div>
+
+	<div>
+		<label asp-for="Nombre"></label>
+		<input asp-for="Nombre" class="form-control" />
+		<span asp-validation-for="Nombre" class="text-danger"></span>
+	</div>
+	<div>
+		<label asp-for="Creditos"></label>
+		<input asp-for="Creditos" class="form-control" />
+		<span asp-validation-for="Creditos" class="text-danger"></span>
+	</div>
+	<div>
+		<label asp-for="Carrera"></label>
+		<select asp-for="Carrera" class="form-control" asp-items="@(new SelectList (new[] { "Administracion de Empresas","Contabilidad","Derecho","Ingeniería Industrial","Psicología" }))">
+			<option value="">Selecciona una carrera</option>
+		</select>
+		<span asp-validation-for="Carrera" class="text-danger"></span>
+																								 	</div>
+
+	<br />
+
+	<div>
+		<button type="submit" class="btn btn-primary">Guardar</button>
+		<a href="/Materias/ListadoMaterias" class="btn btn-secondary">Lista de materias registradas</a>
+	</div>
+
+</form>
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}

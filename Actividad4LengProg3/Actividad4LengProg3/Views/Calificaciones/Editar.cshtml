@@ -1,10 +1,15 @@
 ﻿@model CalificacionViewModel;
 
+
 @if (TempData["Mensaje"] != null)
 {
 	<div class="alert alert-success">@TempData["Mensaje"]</div>
 }
 
+
+<h1 class="text-center my-4" style="font-size: 2.5rem; font-weight: 600; color: #2c3e50;">
+	Edicion de calificaciones
+</h1>
 
 <form asp-action="Editar" asp-controller="Calificaciones" method="post">
 	<input type="hidden" asp-for="Id" />
@@ -30,7 +35,7 @@
 
 	<div>
 		<button class="btn btn-primary" type="submit">Guardar cambios</button>
-		<a href="/Calificaciones/Lista" class="btn btn-danger">Cancelar</a>
+		<a href="/Calificaciones/ListadoCalificaciones" class="btn btn-danger">Cancelar</a>
 	</div>
 
 </form>
