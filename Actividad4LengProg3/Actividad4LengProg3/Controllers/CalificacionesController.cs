@@ -17,17 +17,17 @@ namespace Actividad4LengProg3.Controllers
         public IActionResult Index()
         {
             ViewBag.Estudiantes = _context.Estudiante
-            .Select(e => new SelectListItem
+            .Select(Elemento => new SelectListItem
             {
-                Value = e.Matricula,
-                Text = e.Matricula + " - " + e.Nombre + " - " + e.Carrera
+                Value = Elemento.Matricula,
+                Text = Elemento.Matricula + " - " + Elemento.Nombre + " - " + Elemento.Carrera
             }).ToList();
 
             ViewBag.Materias = _context.Materia
-            .Select(m => new SelectListItem
+            .Select(Elementos => new SelectListItem
             {
-                Value = m.Codigo,
-                Text = m.Codigo + " - " + m.Nombre
+                Value = Elementos.Codigo,
+                Text = Elementos.Codigo + " - " + Elementos.Nombre
             }).ToList();
 
             return View(new CalificacionViewModel());

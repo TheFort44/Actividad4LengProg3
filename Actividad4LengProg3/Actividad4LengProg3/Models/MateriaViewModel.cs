@@ -25,7 +25,7 @@ namespace Actividad4LengProg3.Models
         [Display(Name = "Créditos")]
         public int? Creditos { get; set; }
 
-        [Required(ErrorMessage = "Selecciona una carrera")]
+        [Required(ErrorMessage = "Seleccione una carrera")]
         [StringLength(80)]
         [Column("Carrera")]
         [Display(Name = "Carrera")]

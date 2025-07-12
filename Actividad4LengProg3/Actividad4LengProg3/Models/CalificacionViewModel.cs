@@ -12,12 +12,12 @@ namespace Actividad4LengProg3.Models
 
         [Required(ErrorMessage = "La matrícula del estudiante es obligatoria.")]
         [Column ("MatriculaEstudiante")]
-        [Display(Name = "Introduzca su matricula")]
+        [Display(Name = "Seleccione la matricula del estudiante")]
         public string MatriculaEstudiante { get; set; } = null!;
 
         [Required(ErrorMessage = "El código de la materia es obligatorio.")]
         [Column("CodigoMateria")]
-        [Display(Name = "Código de la materia")]
+        [Display(Name = "Seleccione la asignatura")]
         public string CodigoMateria { get; set; } = null!;
 
         [Required(ErrorMessage = "La nota es obligatoria.")]
